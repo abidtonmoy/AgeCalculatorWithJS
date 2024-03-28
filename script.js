@@ -71,4 +71,10 @@ function calculateAge() {
     "</span> months, and <span class='days'>" +
     daysDiff +
     "</span> days old.";
+   if (yearsDiff > 18) {
+    ageOutput.innerHTML += "<br>Get married!";
+  } else {
+    ageOutput.innerHTML +=
+      "<br>You are too young for married.Focus on your study";
+  }
 }
